@@ -34,7 +34,7 @@ common repository to which you have write-access.
 If this isn't already set up on your performance benchmarking machine, you can
 do all of this setup by following these steps::
 
-    conda create -n ASIM-BENCH conda git gh -c conda-forge --override-channels
+    conda create -n ASIM-BENCH git gh -c conda-forge --override-channels
     conda activate ASIM-BENCH
     gh auth login  # <--- (only needed if gh is not logged in)
     gh repo clone ActivitySim/activitysim          # TEMPORARY: use jpn--/activitysim
