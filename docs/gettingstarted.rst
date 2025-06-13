@@ -114,8 +114,7 @@ can run the shortcut command
   conda activate asim
 
 The activation of the correct environment needs to be done every time you
-start a new session (e.g. opening a new conda Prompt window).  Note that
-the *activate* and *deactivate* commands are always called as `conda`.
+start a new session (e.g. opening a new conda Prompt window).
 
 Alternative Installation Methods
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
