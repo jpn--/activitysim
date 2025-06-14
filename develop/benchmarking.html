@@ -40,7 +40,7 @@
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script src="_static/documentation_options.js?v=78412be8"></script>
+    <script src="_static/documentation_options.js?v=4ea7fb97"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
@@ -50,7 +50,7 @@
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://jpn--.github.io/activitysim/switcher.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '1.1.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '1.4.1';
         DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
         </script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -59,7 +59,7 @@
     <link rel="prev" title="Core Components" href="core.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Jun 13, 2025"/>
+    <meta name="docbuild:last-update" content="Jun 14, 2025"/>
   </head>
   
   
@@ -480,13 +480,13 @@ also make sure that your <code class="docutils literal notranslate"><span class=
 common repository to which you have write-access.</p>
 <p>If this isn’t already set up on your performance benchmarking machine, you can
 do all of this setup by following these steps:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">ASIM</span><span class="o">-</span><span class="n">BENCH</span> <span class="n">mamba</span> <span class="n">git</span> <span class="n">gh</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">--</span><span class="n">override</span><span class="o">-</span><span class="n">channels</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">ASIM</span><span class="o">-</span><span class="n">BENCH</span> <span class="n">git</span> <span class="n">gh</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">--</span><span class="n">override</span><span class="o">-</span><span class="n">channels</span>
 <span class="n">conda</span> <span class="n">activate</span> <span class="n">ASIM</span><span class="o">-</span><span class="n">BENCH</span>
 <span class="n">gh</span> <span class="n">auth</span> <span class="n">login</span>  <span class="c1"># &lt;--- (only needed if gh is not logged in)</span>
 <span class="n">gh</span> <span class="n">repo</span> <span class="n">clone</span> <span class="n">ActivitySim</span><span class="o">/</span><span class="n">activitysim</span>          <span class="c1"># TEMPORARY: use jpn--/activitysim</span>
 <span class="n">cd</span> <span class="n">activitysim</span>
 <span class="n">git</span> <span class="n">switch</span> <span class="n">develop</span>                             <span class="c1"># TEMPORARY: use performance1 branch</span>
-<span class="n">mamba</span> <span class="n">env</span> <span class="n">update</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">conda</span><span class="o">-</span><span class="n">environments</span><span class="o">/</span><span class="n">activitysim</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">conda</span> <span class="n">env</span> <span class="n">update</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">conda</span><span class="o">-</span><span class="n">environments</span><span class="o">/</span><span class="n">activitysim</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">yml</span>
 <span class="n">cd</span> <span class="o">..</span>
 <span class="n">gh</span> <span class="n">repo</span> <span class="n">fork</span> <span class="n">ActivitySim</span><span class="o">/</span><span class="n">asim</span><span class="o">-</span><span class="n">benchmarks</span> <span class="o">--</span><span class="n">remote</span>
 <span class="n">cd</span> <span class="n">asim</span><span class="o">-</span><span class="n">benchmarks</span>
@@ -506,7 +506,7 @@ consider updating the environment like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">ASIM</span><span class="o">-</span><span class="n">BENCH</span>
 <span class="n">cd</span> <span class="n">activitysim</span>
 <span class="n">git</span> <span class="n">switch</span> <span class="n">develop</span>                             <span class="c1"># TEMPORARY: use performance1 branch</span>
-<span class="n">mamba</span> <span class="n">env</span> <span class="n">update</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">conda</span><span class="o">-</span><span class="n">environments</span><span class="o">/</span><span class="n">activitysim</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">yml</span>
+<span class="n">conda</span> <span class="n">env</span> <span class="n">update</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">conda</span><span class="o">-</span><span class="n">environments</span><span class="o">/</span><span class="n">activitysim</span><span class="o">-</span><span class="n">dev</span><span class="o">.</span><span class="n">yml</span>
 <span class="n">cd</span> <span class="o">..</span>
 <span class="n">cd</span> <span class="n">asim</span><span class="o">-</span><span class="n">benchmarks</span>
 <span class="n">git</span> <span class="n">pull</span>
@@ -802,7 +802,7 @@ mitigate problems promptly if desired.</p>
       
         <div class="footer-item"><!-- This will display the version of the docs -->
 <p class="last-updated">
-ActivitySim 1.1.1.dev1566+g022775be, documentation last updated Jun 13, 2025.<br/>
+ActivitySim 1.4.1.dev1+g237eee71, documentation last updated Jun 14, 2025.<br/>
 </p></div>
       
         <div class="footer-item">
